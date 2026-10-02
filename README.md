@@ -4,7 +4,30 @@
 
 This project represents the accepted Stage 0 concept: a jacketed CSTR for acid-catalyzed precursor cyclization, with conversion inferred from a calibrated precursor-concentration analyzer. The current model uses three storage states and a lumped one-step reaction. It does not predict desired-isomer purity or degradation.
 
-## Run
+## Interactive visual dashboard
+
+Launch from the project folder:
+
+```powershell
+py -m pip install -r requirements.txt
+py -m streamlit run app.py
+```
+
+Use `python` instead of `py` in a Codespace or on Linux/macOS. On Windows, you can also double-click `run_visual.bat`; it installs the dependencies and launches the dashboard. Keep the terminal open while using it, and press Ctrl+C to stop it.
+
+The dashboard opens at http://localhost:8501. If a browser tab does not open automatically, paste that address into your browser.
+
+- Set startup or an initially settled reactor, jacket temperatures, a step time and simulation duration.
+- Adjust feed flow, working volume, feed concentration/temperature and heat-transfer conductance.
+- Press **Run simulation** to apply the input settings.
+- Use the inspection-time slider to update the vessel schematic and readouts. Chart **Play** animates the plots separately; **Full result** restores the complete trajectories.
+- Hover/zoom the input, reactor temperature, inventories and conversion plots. Download each experiment as CSV plus a JSON record of its assumptions and checks.
+
+Changing settings in the form does not change the displayed experiment until Run simulation is pressed. Scheduled steps are integrated as separate intervals so the solver does not smear the discontinuity. The dashboard uses the same `src/model.py` balances as the headless simulation.
+
+ZIP downloads are snapshots: if you downloaded the repository before the dashboard was added, download and extract the latest ZIP to get `app.py` and the updated requirements. ZIP folders are not Git clones and cannot be updated using `git pull`.
+
+## Headless simulation
 
 ```bash
 python -m pip install -r requirements.txt

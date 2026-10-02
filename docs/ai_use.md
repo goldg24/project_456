@@ -19,3 +19,11 @@
 **Remaining record:** Add actual Codespace URL/name, coding-agent prompts and responses, commands and execution outputs, commit identifiers, accepted/rejected suggestions, and student reasoning after performing the required Codespace work. Do not backdate this workspace run as Codespace activity. This summary is not a verbatim transcript; retain/export the full interaction if the final rubric requires one.
 
 **Tokens and cost:** Exact token counts and billed cost are not exposed for this session. No numerical estimate is claimed. If required, follow the course estimation method and cite the provider pricing page and separate input/output/cached rates actually used.
+
+## Visual dashboard extension — October 1, 2026
+
+User requested a complete visual screen for inputs and outputs over time. AI added a local Streamlit/Plotly dashboard with an inspection slider, reactor schematic, scheduled jacket step, chart playback, parameter controls and CSV/JSON export. Dashboard trajectories use the existing model rather than a separate visual approximation. Chart animation and the inspection snapshot operate independently and are labeled accordingly.
+
+Verification performed in the assistant workspace: fixed-input baseline reproduces prior endpoint; warming and cooling change conversion in the predicted directions; step-state continuity and exact step timing pass; inventory conservation passes; invalid step timing is rejected. Streamlit AppTest rendered the dashboard without exceptions and applied a changed form setting without exceptions. Browser playback and the Windows launch script have not been exercised on the student's computer. No Codespace run or student review is claimed.
+
+Framework API references inspected: https://docs.streamlit.io/develop/api-reference/charts/st.plotly_chart and https://docs.streamlit.io/develop/api-reference/execution-flow/st.form . These support UI implementation only, not physical model validation.
