@@ -1,0 +1,86 @@
+{
+  "startup": {
+    "jacket_K": 330.0,
+    "steady_state": [
+      0.44464913305973497,
+      0.555350866940265,
+      327.25907783200245
+    ],
+    "apparent_conversion": 0.555350866940265,
+    "settling_min": 66.25,
+    "scaled_endpoint_error": 4.3416645780780525e-07,
+    "scaled_rhs_residual_per_min": 2.2320131164502156e-08,
+    "tolerance_repeat_difference": 1.0154678875551326e-09,
+    "total_inventory_error_mol_L": 2.220446049250313e-16,
+    "local_eigenvalues_per_min": [
+      {
+        "real": -0.033333333333308846,
+        "imag": 0.0
+      },
+      {
+        "real": -0.05122395887180442,
+        "imag": 0.006875168158950984
+      },
+      {
+        "real": -0.05122395887180442,
+        "imag": -0.006875168158950984
+      }
+    ]
+  },
+  "warming_step": {
+    "jacket_K": 340.0,
+    "steady_state": [
+      0.4043540664988841,
+      0.5956459335011158,
+      329.72693891628944
+    ],
+    "apparent_conversion": 0.5956459335011159,
+    "settling_min": 75.5,
+    "scaled_endpoint_error": 1.6727219644963043e-07,
+    "scaled_rhs_residual_per_min": 8.366976565754581e-09,
+    "tolerance_repeat_difference": 1.972750851564342e-09,
+    "total_inventory_error_mol_L": 2.220446049250313e-16,
+    "local_eigenvalues_per_min": [
+      {
+        "real": -0.03333333333313537,
+        "imag": 0.0
+      },
+      {
+        "real": -0.058623730993802275,
+        "imag": 0.0
+      },
+      {
+        "real": -0.05046469113332981,
+        "imag": 0.0
+      }
+    ]
+  },
+  "cooling_step": {
+    "jacket_K": 320.0,
+    "steady_state": [
+      0.4865705771384434,
+      0.5134294228615567,
+      324.7760876545261
+    ],
+    "apparent_conversion": 0.5134294228615566,
+    "settling_min": 77.25,
+    "scaled_endpoint_error": 3.178683414262196e-08,
+    "scaled_rhs_residual_per_min": 2.4786222657668944e-09,
+    "tolerance_repeat_difference": 4.530846808847855e-09,
+    "total_inventory_error_mol_L": 3.3306690738754696e-16,
+    "local_eigenvalues_per_min": [
+      {
+        "real": -0.03333333333313537,
+        "imag": 0.0
+      },
+      {
+        "real": -0.04844430249520415,
+        "imag": 0.009056027771304136
+      },
+      {
+        "real": -0.04844430249520415,
+        "imag": -0.009056027771304136
+      }
+    ]
+  }
+}
